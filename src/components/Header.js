@@ -15,6 +15,9 @@ const Header = () => {
           new
         </Link>
         <div className="ml1">|</div>
+        <Link to="top" className='mli no-underline blank'>
+          top
+        </Link>
         <Link
           to="/search"
           className="ml1 no-underline black"
