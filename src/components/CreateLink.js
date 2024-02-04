@@ -5,17 +5,17 @@ import {FEED_QUERY} from "./LinkList";
 import {LINKS_PER_PAGE} from "../constants";
 
 const CREATE_LINK_MUTATION = gql`
-  mutation PostMutation(
-    $description: String!
-    $url: String!
-  ) {
-    post(description: $description, url: $url) {
-      id
-      createdAt
-      url
-      description
+    mutation PostMutation(
+        $description: String!
+        $url: String!
+    ) {
+        post(description: $description, url: $url) {
+            id
+            createdAt
+            url
+            description
+        }
     }
-  }
 `;
 
 const CreateLink = () => {
